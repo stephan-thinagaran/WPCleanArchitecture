@@ -1,0 +1,14 @@
+dotnet new sln -o "WPCleanArch"
+
+//Adding classlib
+dotnet new classlib -o WPCleanArch.Infrastructure
+dotnet new classlib -o WPCleanArch.Core 
+dotnet new classlib -o WPCleanArch.UseCases
+
+//Aspire ProjectTemplates
+dotnet new install Aspire.ProjectTemplates 
+dotnet new aspire-apphost --name WPCleanArch.AspireHost
+dotnet new aspire-servicedefaults --name WPCleanArch.ServiceDefaults
+
+//Adding Project to Solution (syntax - similar for other Project)
+dotnet sln add "d:\GitRepoStephan\WPCleanArch\src\WPCleanArch.ServiceDefaults\WPCleanArch.ServiceDefaults.csproj
