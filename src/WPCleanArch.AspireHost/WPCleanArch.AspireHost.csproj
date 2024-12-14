@@ -15,4 +15,9 @@
     <PackageReference Include="Aspire.Hosting.AppHost" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WPCleanArch.ServiceDefaults\WPCleanArch.ServiceDefaults.csproj" IsAspireProjectResource="false"/>
+    <ProjectReference Include="..\WPCleanArch.Web\WPCleanArch.Web.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WPCleanArch.Core\WPCleanArch.Core.csproj" />
+    <ProjectReference Include="..\WPCleanArch.UseCases\WPCleanArch.UseCases.csproj" />
+  </ItemGroup>
+
 </Project>
